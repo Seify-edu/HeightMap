@@ -26,6 +26,7 @@
 		B10B38EE1854C960006531E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10B38C51854C95F006531E2 /* UIKit.framework */; };
 		B10B38F61854C960006531E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B10B38F41854C960006531E2 /* InfoPlist.strings */; };
 		B10B38F81854C960006531E2 /* HeightMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B10B38F71854C960006531E2 /* HeightMapTests.m */; };
+		B132E8431854D9850006D7CF /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = B132E8421854D9850006D7CF /* Map.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		B10B38F31854C960006531E2 /* HeightMapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeightMapTests-Info.plist"; sourceTree = "<group>"; };
 		B10B38F51854C960006531E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B10B38F71854C960006531E2 /* HeightMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeightMapTests.m; sourceTree = "<group>"; };
+		B132E8421854D9850006D7CF /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		B10B38CB1854C95F006531E2 /* HeightMap */ = {
 			isa = PBXGroup;
 			children = (
+				B132E8411854D9850006D7CF /* Maps */,
 				B10B38D41854C95F006531E2 /* HMAppDelegate.h */,
 				B10B38D51854C95F006531E2 /* HMAppDelegate.m */,
 				B10B38D71854C95F006531E2 /* Main_iPhone.storyboard */,
@@ -167,6 +170,14 @@
 				B10B38F41854C960006531E2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B132E8411854D9850006D7CF /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				B132E8421854D9850006D7CF /* Map.png */,
+			);
+			path = Maps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 				B10B38E51854C95F006531E2 /* Images.xcassets in Resources */,
 				B10B38D01854C95F006531E2 /* InfoPlist.strings in Resources */,
 				B10B38E01854C95F006531E2 /* Shader.vsh in Resources */,
+				B132E8431854D9850006D7CF /* Map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +429,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeightMap/HeightMap-Prefix.pch";
 				INFOPLIST_FILE = "HeightMap/HeightMap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -433,6 +446,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeightMap/HeightMap-Prefix.pch";
 				INFOPLIST_FILE = "HeightMap/HeightMap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

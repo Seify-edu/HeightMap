@@ -85,7 +85,7 @@ GLfloat gCubeVertexData[216] =
     GLuint _vertexBuffer;
 }
 @property (strong, nonatomic) EAGLContext *context;
-@property (strong, nonatomic) GLKBaseEffect *effect;
+@property GLfloat *terrain;
 
 - (void)setupGL;
 - (void)tearDownGL;
@@ -112,6 +112,7 @@ GLfloat gCubeVertexData[216] =
     view.context = self.context;
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
     
+    [self loadLevel];
     [self setupGL];
 }
 
@@ -148,10 +149,6 @@ GLfloat gCubeVertexData[216] =
     
     [self loadShaders];
     
-    self.effect = [[GLKBaseEffect alloc] init];
-    self.effect.light0.enabled = GL_TRUE;
-    self.effect.light0.diffuseColor = GLKVector4Make(1.0f, 0.4f, 0.4f, 1.0f);
-    
     glEnable(GL_DEPTH_TEST);
     
     glGenVertexArraysOES(1, &_vertexArray);
@@ -159,7 +156,8 @@ GLfloat gCubeVertexData[216] =
     
     glGenBuffers(1, &_vertexBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(gCubeVertexData), gCubeVertexData, GL_STATIC_DRAW);
+//    glBufferData(GL_ARRAY_BUFFER, sizeof(gCubeVertexData), gCubeVertexData, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, 512 * 3 * 6 * sizeof(GLfloat), self.terrain, GL_STATIC_DRAW);
     
     glEnableVertexAttribArray(GLKVertexAttribPosition);
     glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 24, BUFFER_OFFSET(0));
@@ -176,12 +174,79 @@ GLfloat gCubeVertexData[216] =
     glDeleteBuffers(1, &_vertexBuffer);
     glDeleteVertexArraysOES(1, &_vertexArray);
     
-    self.effect = nil;
-    
     if (_program) {
         glDeleteProgram(_program);
         _program = 0;
     }
+}
+
+#pragma mark - Game logic
+
+- (GLfloat *)loadTerrainFromImage:(UIImage *)map
+{
+    CGImageRef imageRef = [map CGImage];
+    NSUInteger width = CGImageGetWidth(imageRef);
+    NSUInteger height = CGImageGetHeight(imageRef);
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    unsigned char *rawData = (unsigned char*) calloc(height * width * 4, sizeof(unsigned char));
+    NSUInteger bytesPerPixel = 4;
+    NSUInteger bytesPerRow = bytesPerPixel * width;
+    NSUInteger bitsPerComponent = 8;
+    CGContextRef context = CGBitmapContextCreate(rawData, width, height,
+                                                 bitsPerComponent, bytesPerRow, colorSpace,
+                                                 kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    CGColorSpaceRelease(colorSpace);
+    
+    CGContextDrawImage(context, CGRectMake(0, 0, width, height), imageRef);
+    CGContextRelease(context);
+        
+    // Now your rawData contains the image data in the RGBA8888 pixel format.
+//    int byteIndex = (bytesPerRow * yy) + xx * bytesPerPixel;
+//    for (int ii = 0 ; ii < count ; ++ii)
+//    {
+//        CGFloat red   = (rawData[byteIndex]     * 1.0) / 255.0;
+//        CGFloat green = (rawData[byteIndex + 1] * 1.0) / 255.0;
+//        CGFloat blue  = (rawData[byteIndex + 2] * 1.0) / 255.0;
+//        CGFloat alpha = (rawData[byteIndex + 3] * 1.0) / 255.0;
+//        byteIndex += 4;
+//        
+//        UIColor *acolor = [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+//        [result addObject:acolor];
+//    }
+    const int POINTS_IN_TRIANGLE = 3;
+    const int COORDS_PER_POINT = 3;
+    const int NORMAL_COORDS_PER_POINT = 3;
+    self.terrain = calloc(width * POINTS_IN_TRIANGLE * (COORDS_PER_POINT + NORMAL_COORDS_PER_POINT), sizeof(GLfloat));
+    for ( int i = 0; i < width; i++ )
+    {
+//        self.terrain[i] = ( GLfloat( i ) / GLfloat( width ) * 1.0; // x = [0.0 .. 1.0];
+        
+        self.terrain[i * 12 + 0] = [@(i) floatValue] / [@(width) floatValue]; // x1 = [0.0 .. 1.0];
+        self.terrain[i * 12 + 1] =  [@(rawData[i * 4]) floatValue] / 255.0;
+        self.terrain[i * 12 + 2] = 0.0; //
+        
+        self.terrain[i * 12 + 3] = 0.0; // Normal X
+        self.terrain[i * 12 + 4] = 1.0; // Normal Y
+        self.terrain[i * 12 + 5] = 0.0; // Normal Z
+        
+        self.terrain[i * 12 + 6] = [@(i) floatValue] / [@(width) floatValue]; // x2 = [0.0 .. 1.0];
+        self.terrain[i * 12 + 7] = [@(rawData[i * 4]) floatValue] / 255.0; //
+        self.terrain[i * 12 + 8] = -0.5; //
+
+        self.terrain[i * 12 + 9] = 0.0; // Normal X
+        self.terrain[i * 12 + 10] = 1.0; // Normal Y
+        self.terrain[i * 12 + 11] = 0.0; // Normal Z
+}
+    
+    free(rawData);
+    
+    return nil;
+}
+
+- (void)loadLevel
+{
+    UIImage *mapHeight = [UIImage imageNamed:@"Map.png"];
+    [self loadTerrainFromImage:mapHeight];
 }
 
 #pragma mark - GLKView and GLKViewController delegate methods
@@ -191,21 +256,18 @@ GLfloat gCubeVertexData[216] =
     float aspect = fabsf(self.view.bounds.size.width / self.view.bounds.size.height);
     GLKMatrix4 projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(65.0f), aspect, 0.1f, 100.0f);
     
-    self.effect.transform.projectionMatrix = projectionMatrix;
+//    GLKMatrix4 baseModelViewMatrix = GLKMatrix4MakeTranslation(0.0f, 0.0f, -1.0f);
+    GLKMatrix4 baseModelViewMatrix = GLKMatrix4Identity;
+//    baseModelViewMatrix = GLKMatrix4Rotate(baseModelViewMatrix, _rotation, 0.0f, 1.0f, 0.0f);
     
-    GLKMatrix4 baseModelViewMatrix = GLKMatrix4MakeTranslation(0.0f, 0.0f, -4.0f);
-    baseModelViewMatrix = GLKMatrix4Rotate(baseModelViewMatrix, _rotation, 0.0f, 1.0f, 0.0f);
-    
-    // Compute the model view matrix for the object rendered with GLKit
-    GLKMatrix4 modelViewMatrix = GLKMatrix4MakeTranslation(0.0f, 0.0f, -1.5f);
-    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, _rotation, 1.0f, 1.0f, 1.0f);
-    modelViewMatrix = GLKMatrix4Multiply(baseModelViewMatrix, modelViewMatrix);
-    
-    self.effect.transform.modelviewMatrix = modelViewMatrix;
+    GLKMatrix4 modelViewMatrix;
     
     // Compute the model view matrix for the object rendered with ES2
-    modelViewMatrix = GLKMatrix4MakeTranslation(0.0f, 0.0f, 1.5f);
-    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, _rotation, 1.0f, 1.0f, 1.0f);
+//    modelViewMatrix = GLKMatrix4MakeTranslation(0.0f, 0.0f, 1.5f);
+//    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, _rotation, 1.0f, 1.0f, 1.0f);
+    
+    modelViewMatrix = GLKMatrix4MakeTranslation(0.0f, -0.5f, -2.0f);;
+    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, _rotation, 0.0f, 1.0f, 0.0f);
     modelViewMatrix = GLKMatrix4Multiply(baseModelViewMatrix, modelViewMatrix);
     
     _normalMatrix = GLKMatrix3InvertAndTranspose(GLKMatrix4GetMatrix3(modelViewMatrix), NULL);
@@ -222,18 +284,13 @@ GLfloat gCubeVertexData[216] =
     
     glBindVertexArrayOES(_vertexArray);
     
-    // Render the object with GLKit
-    [self.effect prepareToDraw];
-    
-    glDrawArrays(GL_TRIANGLES, 0, 36);
-    
-    // Render the object again with ES2
+    // Render the object with ES2
     glUseProgram(_program);
     
     glUniformMatrix4fv(uniforms[UNIFORM_MODELVIEWPROJECTION_MATRIX], 1, 0, _modelViewProjectionMatrix.m);
     glUniformMatrix3fv(uniforms[UNIFORM_NORMAL_MATRIX], 1, 0, _normalMatrix.m);
     
-    glDrawArrays(GL_TRIANGLES, 0, 36);
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, 512 * 2);
 }
 
 #pragma mark -  OpenGL ES 2 shader compilation
