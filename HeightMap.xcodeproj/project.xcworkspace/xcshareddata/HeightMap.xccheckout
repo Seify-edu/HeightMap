@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>45813882-2E58-49FB-B0EC-4302F93B8414</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HeightMap</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A65172CF-82B3-4523-A784-BDFA9E4BBF01</key>
+		<string>https://github.com/Seify/HeightMap.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HeightMap.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A65172CF-82B3-4523-A784-BDFA9E4BBF01</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Seify/HeightMap.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A65172CF-82B3-4523-A784-BDFA9E4BBF01</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A65172CF-82B3-4523-A784-BDFA9E4BBF01</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HeightMap</string>
+		</dict>
+	</array>
+</dict>
+</plist>

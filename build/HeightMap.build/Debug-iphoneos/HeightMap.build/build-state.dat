@@ -298,9 +298,9 @@ t1386516959
 s251
 
 N/Users/Seify/Desktop/My Projects/HeightMap/HeightMap/HMViewController.m
-c0000000052A8D818000000000000368C
-t1386797080
-s13964
+c0000000052AB8EF40000000000003E47
+t1386974964
+s15943
 
 N/Users/Seify/Desktop/My Projects/HeightMap/HeightMap/HeightMap-Info.plist
 c0000000052A491DF0000000000000657
@@ -318,19 +318,19 @@ t1386516959
 s136
 
 N/Users/Seify/Desktop/My Projects/HeightMap/HeightMap/Maps/Map.png
-c0000000052A8D8C7000000000002B35D
-t1386797255
-s176989
+c0000000052AB8A480000000000005BF8
+t1386973768
+s23544
 
 N/Users/Seify/Desktop/My Projects/HeightMap/HeightMap/Shaders/Shader.fsh
-c0000000052A8D382000000000000010D
-t1386795906
+c0000000052AB876F000000000000010D
+t1386973039
 s269
 
 N/Users/Seify/Desktop/My Projects/HeightMap/HeightMap/Shaders/Shader.vsh
-c0000000052A8D5F8000000000000028F
-t1386796536
-s655
+c0000000052AB8D180000000000000176
+t1386974488
+s374
 
 N/Users/Seify/Desktop/My Projects/HeightMap/HeightMap/en.lproj/InfoPlist.strings
 c0000000052A491DF000000000000002D
@@ -343,11 +343,11 @@ t1386516959
 s348
 
 N/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app
-t1386797255
+t1386974966
 s544
 
 N/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app.dSYM
-t1386797081
+t1386974865
 s102
 
 N/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/Base.lproj/Main_iPad.storyboardc
@@ -359,16 +359,16 @@ t1386786352
 s170
 
 N/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/HeightMap
-t1386797084
-s89440
+t1386974966
+s78884
 
 N/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/Info.plist
 t1386786352
 s1623
 
 N/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/Map.png
-t1386797255
-s237221
+t1386973772
+s28837
 
 N/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/PkgInfo
 t1386786352
@@ -379,12 +379,12 @@ t1386518129
 s150
 
 N/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/Shader.fsh
-t1386795906
+t1386973043
 s269
 
 N/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/Shader.vsh
-t1386796536
-s655
+t1386974488
+s374
 
 N/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/embedded.mobileprovision
 t1386518140
@@ -395,7 +395,7 @@ t1386518135
 s42
 
 N/Users/Seify/Desktop/My Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcent
-t1386794976
+t1386965862
 s410
 
 N/Users/Seify/Desktop/My Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HMAppDelegate.o
@@ -403,8 +403,8 @@ t1386786332
 s64592
 
 N/Users/Seify/Desktop/My Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HMViewController.o
-t1386797081
-s86476
+t1386974965
+s88424
 
 N/Users/Seify/Desktop/My Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HeightMap.LinkFileList
 c0000000052A496700000000000000189
@@ -447,17 +447,16 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesfe0b24471059b841^026424471059b841^---0#1#1#--18"Check dependencies36"0D0749BC-6B08-4B15-8BE8-89F050419265-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies03ece374c65bb841^1c99e774c65bb841^---0#1#1#--18"Check dependencies36"A75F9364-E7CA-4B28-BDC6-DA7766F42D9B-
 
 CCodeSign /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app
-s408490055.528412
-e408490058.874078
+s408667766.398526
+e408667770.016808
 r1
 xCodeSign
 x/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app
-o/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app: replacing existing signature
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"CodeSign build/Debug-iphoneos/HeightMap.app43"CodeSign build/Debug-iphoneos/HeightMap.appab5987471059b841^09c4df4a1059b841^-108"/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app: replacing existing signature-0#0#1#-19%DVTDocumentLocation2@87"file:///Users/Seify/Desktop/My%20Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/0000000000000000^988"CodeSign build/Debug-iphoneos/HeightMap.app    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    Using code signing identity "iPhone Developer: Roman Smirnov (FJ5TFGGS5H)" and provisioning profile "iOS Team Provisioning Profile: *" (8AECE356-AA01-4176-9FEA-B99FE9FE47EF)    codesign --force --sign DD75FC64943E55F155C0EE5AD24E5CBF5EE2716F --resource-rules=/Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/ResourceRules.plist --entitlements /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcent /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app36"B5FBF251-4F83-406E-8DC1-0096F45B5D4B-
-bD680AAE4-3E8C-463D-B0A9-14EC3CA21EEF
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"CodeSign build/Debug-iphoneos/HeightMap.app43"CodeSign build/Debug-iphoneos/HeightMap.app59186676c65bb841^1e4e047ac65bb841^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/Seify/Desktop/My%20Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/0000000000000000^988"CodeSign build/Debug-iphoneos/HeightMap.app    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    Using code signing identity "iPhone Developer: Roman Smirnov (FJ5TFGGS5H)" and provisioning profile "iOS Team Provisioning Profile: *" (8AECE356-AA01-4176-9FEA-B99FE9FE47EF)    codesign --force --sign DD75FC64943E55F155C0EE5AD24E5CBF5EE2716F --resource-rules=/Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/ResourceRules.plist --entitlements /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcent /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app36"E44F5806-D09E-42B1-AE58-AE971ED9E803-
+b4EE35782-4109-4C95-BC5E-56B5F741081B
 
 CCompileAssetCatalog /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app /Users/Seify/Desktop/My\ Projects/HeightMap/HeightMap/Images.xcassets
 s408479134.216985
@@ -500,8 +499,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile
 b95CA5CA4-82E2-4477-A830-DFDDD5DCB5BA
 
 CCompileC build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HMViewController.o /Users/Seify/Desktop/My\ Projects/HeightMap/HeightMap/HMViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s408489880.909951
-e408489881.026670
+s408667764.892222
+e408667765.059573
 r1
 xCompileC
 xbuild/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HMViewController.o
@@ -512,8 +511,12 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/Seify/Desktop/My Projects/HeightMap/HeightMap/HMViewController.m
 d/Users/Seify/Desktop/My Projects/HeightMap/HeightMap/HMViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/Seify/Desktop/My Projects/HeightMap/HeightMap/HMViewController.m199"CompileC build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HMViewController.o HeightMap/HMViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler5017e9980f59b841^39d506990f59b841^---0#0#1#-19%DVTDocumentLocation2@80"file:///Users/Seify/Desktop/My%20Projects/HeightMap/HeightMap/HMViewController.m0000000000000000^3500"CompileC build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HMViewController.o HeightMap/HMViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Seify/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap-generated-files.hmap -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap-own-target-headers.hmap -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap-all-target-headers.hmap -iquote /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap-project-headers.hmap -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/DerivedSources/armv7 -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/DerivedSources -F/Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos -include /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HeightMap-Prefix-enuliksahkptqsflnonmtrrqkppx/HeightMap-Prefix.pch -MMD -MT dependencies -MF /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HMViewController.d --serialize-diagnostics /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HMViewController.dia -c /Users/Seify/Desktop/My\ Projects/HeightMap/HeightMap/HMViewController.m -o /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HMViewController.o36"A9D59964-0C8B-4925-A866-3F30D177ABED-
-b48532298-6105-4358-A03C-559E0B56C91B
+o/Users/Seify/Desktop/My Projects/HeightMap/HeightMap/HMViewController.m:223:9: warning: unused variable 'redundantTriOffset' [-Wunused-variable]
+o    int redundantTriOffset = 1;
+o        ^
+o1 warning generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/Seify/Desktop/My Projects/HeightMap/HeightMap/HMViewController.m199"CompileC build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HMViewController.o HeightMap/HMViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler728ce474c65bb841^a73f0f75c65bb841^-208"/Users/Seify/Desktop/My Projects/HeightMap/HeightMap/HMViewController.m:223:9: warning: unused variable 'redundantTriOffset' [-Wunused-variable]    int redundantTriOffset = 1;        ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@36"Unused variable 'redundantTriOffset'-408667765#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@80"file:///Users/Seify/Desktop/My%20Projects/HeightMap/HeightMap/HMViewController.m0000000000000000^222#8#222#8#6751#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@80"file:///Users/Seify/Desktop/My%20Projects/HeightMap/HeightMap/HMViewController.m0000000000000000^3500"CompileC build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HMViewController.o HeightMap/HMViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Seify/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap-generated-files.hmap -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap-own-target-headers.hmap -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap-all-target-headers.hmap -iquote /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap-project-headers.hmap -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/DerivedSources/armv7 -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/DerivedSources -F/Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos -include /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HeightMap-Prefix-enuliksahkptqsflnonmtrrqkppx/HeightMap-Prefix.pch -MMD -MT dependencies -MF /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HMViewController.d --serialize-diagnostics /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HMViewController.dia -c /Users/Seify/Desktop/My\ Projects/HeightMap/HeightMap/HMViewController.m -o /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HMViewController.o36"88B37850-94E6-4468-BC76-A1A1EA278B54-
+b4EE35782-4109-4C95-BC5E-56B5F741081B
 
 CCompileC build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/main.o /Users/Seify/Desktop/My\ Projects/HeightMap/HeightMap/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s408479132.438210
@@ -559,14 +562,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile
 b95CA5CA4-82E2-4477-A830-DFDDD5DCB5BA
 
 CCopyPNGFile /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/Map.png HeightMap/Maps/Map.png
-s408490055.146167
-e408490055.473474
+s408666571.751992
+e408666572.192884
 r1
 xCopyPNGFile
 x/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/Map.png
 xHeightMap/Maps/Map.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"CopyPNGFile build/Debug-iphoneos/HeightMap.app/Map.png HeightMap/Maps/Map.png77"CopyPNGFile build/Debug-iphoneos/HeightMap.app/Map.png HeightMap/Maps/Map.png1f8325471059b841^503679471059b841^---0#0#1#-19%DVTDocumentLocation2@74"file:///Users/Seify/Desktop/My%20Projects/HeightMap/HeightMap/Maps/Map.png0000000000000000^583"CopyPNGFile build/Debug-iphoneos/HeightMap.app/Map.png HeightMap/Maps/Map.png    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/Seify/Desktop/My\ Projects/HeightMap/HeightMap/Maps/Map.png /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/Map.png36"68D264A8-2353-4EBA-9BC4-243F6E24C00C-
-bD680AAE4-3E8C-463D-B0A9-14EC3CA21EEF
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"CopyPNGFile build/Debug-iphoneos/HeightMap.app/Map.png HeightMap/Maps/Map.png77"CopyPNGFile build/Debug-iphoneos/HeightMap.app/Map.png HeightMap/Maps/Map.png9b92c0cbc15bb841^a66031ccc15bb841^---0#0#1#-19%DVTDocumentLocation2@74"file:///Users/Seify/Desktop/My%20Projects/HeightMap/HeightMap/Maps/Map.png0000000000000000^583"CopyPNGFile build/Debug-iphoneos/HeightMap.app/Map.png HeightMap/Maps/Map.png    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/Seify/Desktop/My\ Projects/HeightMap/HeightMap/Maps/Map.png /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/Map.png36"AE4CF6C4-8346-405E-9D73-386376752BD8-
+b7F68EC19-F343-4490-86AB-DB88301C4518
 
 CCopyStringsFile /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/en.lproj/InfoPlist.strings HeightMap/en.lproj/InfoPlist.strings
 s408210935.100876
@@ -589,41 +592,41 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Copy bu
 bEDE0872D-9B11-4CAD-9F57-6B684A9A5485
 
 CCpResource HeightMap/Shaders/Shader.fsh build/Debug-iphoneos/HeightMap.app/Shader.fsh
-s408488706.202647
-e408488706.203739
+s408665843.048898
+e408665843.077891
 r1
 xCpResource
 xHeightMap/Shaders/Shader.fsh
 xbuild/Debug-iphoneos/HeightMap.app/Shader.fsh
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy build/Debug-iphoneos/HeightMap.app/Shader.fsh85"CpResource HeightMap/Shaders/Shader.fsh build/Debug-iphoneos/HeightMap.app/Shader.fshb7ed33020b59b841^5e6634020b59b841^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/Seify/Desktop/My%20Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/Shader.fsh0000000000000000^590"CpResource HeightMap/Shaders/Shader.fsh build/Debug-iphoneos/HeightMap.app/Shader.fsh    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Seify/Desktop/My\ Projects/HeightMap/HeightMap/Shaders/Shader.fsh /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app36"1F0D2513-A65E-44A9-9469-56B90CDF8551-
-bD1D5EA71-E00D-4B73-AAC3-2F329F7B1AE7
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy build/Debug-iphoneos/HeightMap.app/Shader.fsh85"CpResource HeightMap/Shaders/Shader.fsh build/Debug-iphoneos/HeightMap.app/Shader.fsh9da10cf3be5bb841^a6f113f3be5bb841^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/Seify/Desktop/My%20Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/Shader.fsh0000000000000000^590"CpResource HeightMap/Shaders/Shader.fsh build/Debug-iphoneos/HeightMap.app/Shader.fsh    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Seify/Desktop/My\ Projects/HeightMap/HeightMap/Shaders/Shader.fsh /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app36"276C3DB8-242C-4925-86F4-8966D79C1E35-
+b7E1A1F5A-2F58-47CD-9D29-87B969819F9A
 
 CCpResource HeightMap/Shaders/Shader.vsh build/Debug-iphoneos/HeightMap.app/Shader.vsh
-s408489336.328326
-e408489336.329410
+s408667288.111967
+e408667288.113447
 r1
 xCpResource
 xHeightMap/Shaders/Shader.vsh
 xbuild/Debug-iphoneos/HeightMap.app/Shader.vsh
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy build/Debug-iphoneos/HeightMap.app/Shader.vsh85"CpResource HeightMap/Shaders/Shader.vsh build/Debug-iphoneos/HeightMap.app/Shader.vshab2254780d59b841^cc7e55780d59b841^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/Seify/Desktop/My%20Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/Shader.vsh0000000000000000^590"CpResource HeightMap/Shaders/Shader.vsh build/Debug-iphoneos/HeightMap.app/Shader.vsh    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Seify/Desktop/My\ Projects/HeightMap/HeightMap/Shaders/Shader.vsh /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app36"95953BA2-B3DF-4503-A0EE-8AF737637202-
-bF1D8B9BB-6BE1-4299-8D78-BE8CDF408F7D
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy build/Debug-iphoneos/HeightMap.app/Shader.vsh85"CpResource HeightMap/Shaders/Shader.vsh build/Debug-iphoneos/HeightMap.app/Shader.vsh78d01c98c45bb841^13271f98c45bb841^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/Seify/Desktop/My%20Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/Shader.vsh0000000000000000^590"CpResource HeightMap/Shaders/Shader.vsh build/Debug-iphoneos/HeightMap.app/Shader.vsh    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Seify/Desktop/My\ Projects/HeightMap/HeightMap/Shaders/Shader.vsh /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app36"8097A50B-C2A8-4C9A-AB3C-29211B10148C-
+b9416BAE1-0B2F-4454-BD40-35D723EBCE4C
 
 CCreateUniversalBinary /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/HeightMap normal armv7\ armv7s\ arm64
 r0
 
 CGenerateDSYMFile /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app.dSYM /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/HeightMap
-s408490055.474415
-e408490055.496707
+s408667766.291046
+e408667766.397339
 r1
 xGenerateDSYMFile
 x/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app.dSYM
 x/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/HeightMap
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Generate /Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app.dSYM101"GenerateDSYMFile build/Debug-iphoneos/HeightMap.app.dSYM build/Debug-iphoneos/HeightMap.app/HeightMap068179471059b841^4e297f471059b841^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/Seify/Desktop/My%20Projects/HeightMap/build/Debug-iphoneos/HeightMap.app.dSYM/0000000000000000^618"GenerateDSYMFile build/Debug-iphoneos/HeightMap.app.dSYM build/Debug-iphoneos/HeightMap.app/HeightMap    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/HeightMap -o /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app.dSYM36"4AEF8D59-4C3D-4D33-BA24-69D8BD7FC98D-
-bD680AAE4-3E8C-463D-B0A9-14EC3CA21EEF
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Generate /Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app.dSYM101"GenerateDSYMFile build/Debug-iphoneos/HeightMap.app.dSYM build/Debug-iphoneos/HeightMap.app/HeightMap18934a76c65bb841^a3ae6576c65bb841^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/Seify/Desktop/My%20Projects/HeightMap/build/Debug-iphoneos/HeightMap.app.dSYM/0000000000000000^618"GenerateDSYMFile build/Debug-iphoneos/HeightMap.app.dSYM build/Debug-iphoneos/HeightMap.app/HeightMap    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/HeightMap -o /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app.dSYM36"5A8D4C42-FFE6-4302-868F-8467ABF427BB-
+b4EE35782-4109-4C95-BC5E-56B5F741081B
 
 CLd /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/HeightMap normal armv7
-s408489881.028283
-e408489881.062064
+s408667765.061059
+e408667766.287852
 r1
 xLd
 x/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/HeightMap
@@ -648,6 +651,7 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Develope
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcache.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcommonCrypto.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcompiler_rt.dylib
@@ -676,9 +680,8 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Develope
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_stats.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libunwind.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libxpc.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Link /Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/HeightMap60"Ld build/Debug-iphoneos/HeightMap.app/HeightMap normal armv7b54f07990f59b841^36e40f990f59b841^---0#0#1#--1294"Ld build/Debug-iphoneos/HeightMap.app/HeightMap normal armv7    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -L/Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos -F/Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos -filelist /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HeightMap.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=6.0 -framework OpenGLES -framework CoreGraphics -framework UIKit -framework GLKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HeightMap_dependency_info.dat -o /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/HeightMap36"DE129DE2-2760-4605-94A4-7EF503154E50-
-b48532298-6105-4358-A03C-559E0B56C91B
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Link /Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/HeightMap60"Ld build/Debug-iphoneos/HeightMap.app/HeightMap normal armv79eb10f75c65bb841^1cb24976c65bb841^---0#0#1#--1294"Ld build/Debug-iphoneos/HeightMap.app/HeightMap normal armv7    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -L/Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos -F/Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos -filelist /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HeightMap.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=6.0 -framework OpenGLES -framework CoreGraphics -framework UIKit -framework GLKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/armv7/HeightMap_dependency_info.dat -o /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/HeightMap36"FD2818EE-914D-4E5D-B62D-CDF0B89764ED-
+b4EE35782-4109-4C95-BC5E-56B5F741081B
 
 CLd /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/Objects-normal/arm64/HeightMap normal arm64
 r0
@@ -702,13 +705,22 @@ b95CA5CA4-82E2-4477-A830-DFDDD5DCB5BA
 CProcessPCH /Users/Seify/Library/Developer/Xcode/DerivedData/HeightMap-dzurxsmwsxlkmnfqyrnzpiyavdhy/Index/PrecompiledHeaders/HeightMap-Prefix-bvbmnudawzmmewgivkzsvbptjvcr_ast/HeightMap-Prefix.pch.pch HeightMap/HeightMap-Prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
+CProcessPCH /Users/Seify/Library/Developer/Xcode/DerivedData/HeightMap-dzurxsmwsxlkmnfqyrnzpiyavdhy/Index/PrecompiledHeaders/HeightMap-Prefix-cajjcjrdbgsdhjegsqqaitcezquq_ast/HeightMap-Prefix.pch.pch HeightMap/HeightMap-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
 CProcessPCH /Users/Seify/Library/Developer/Xcode/DerivedData/HeightMap-dzurxsmwsxlkmnfqyrnzpiyavdhy/Index/PrecompiledHeaders/HeightMap-Prefix-dchdqlruxrtrqtbkhgtondcfysht_ast/HeightMap-Prefix.pch.pch HeightMap/HeightMap-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
 CProcessPCH /Users/Seify/Library/Developer/Xcode/DerivedData/HeightMap-dzurxsmwsxlkmnfqyrnzpiyavdhy/Index/PrecompiledHeaders/HeightMap-Prefix-decrntgshzjeizfdezkkuhsfwwck_ast/HeightMap-Prefix.pch.pch HeightMap/HeightMap-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
+CProcessPCH /Users/Seify/Library/Developer/Xcode/DerivedData/HeightMap-dzurxsmwsxlkmnfqyrnzpiyavdhy/Index/PrecompiledHeaders/HeightMap-Prefix-fnrmiweoudgwbbgrgjjlcexivdxu_ast/HeightMap-Prefix.pch.pch HeightMap/HeightMap-Prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
 CProcessPCH /Users/Seify/Library/Developer/Xcode/DerivedData/HeightMap-dzurxsmwsxlkmnfqyrnzpiyavdhy/Index/PrecompiledHeaders/HeightMap-Prefix-fyohbfiraworjzftvhyqdhkkizeo_ast/HeightMap-Prefix.pch.pch HeightMap/HeightMap-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HeightMap-Prefix-aoypxstywczpombgaapddofsmwav/HeightMap-Prefix.pch.pch HeightMap/HeightMap-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
 CProcessPCH /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HeightMap-Prefix-cwszbwykpwheohgncxlxdoudfwih/HeightMap-Prefix.pch.pch HeightMap/HeightMap-Prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -744,18 +756,21 @@ d/Users/Seify/Desktop/My Projects/HeightMap/HeightMap/HeightMap-Prefix.pch
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Precompile HeightMap/HeightMap-Prefix.pch299"ProcessPCH /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HeightMap-Prefix-eudyawktplqwiecuylaipyqiephl/HeightMap-Prefix.pch.pch HeightMap/HeightMap-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler9e2716f1cd54b841^36c963f5cd54b841^---0#0#1#-19%DVTDocumentLocation2@82"file:///Users/Seify/Desktop/My%20Projects/HeightMap/HeightMap/HeightMap-Prefix.pch0000000000000000^3567"ProcessPCH /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HeightMap-Prefix-eudyawktplqwiecuylaipyqiephl/HeightMap-Prefix.pch.pch HeightMap/HeightMap-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Seify/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap-generated-files.hmap -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap-own-target-headers.hmap -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap-all-target-headers.hmap -iquote /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap-project-headers.hmap -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/DerivedSources/armv7 -I/Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/DerivedSources -F/Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos --serialize-diagnostics /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HeightMap-Prefix-eudyawktplqwiecuylaipyqiephl/HeightMap-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HeightMap-Prefix-eudyawktplqwiecuylaipyqiephl/HeightMap-Prefix.pch.d -c /Users/Seify/Desktop/My\ Projects/HeightMap/HeightMap/HeightMap-Prefix.pch -o /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HeightMap-Prefix-eudyawktplqwiecuylaipyqiephl/HeightMap-Prefix.pch.pch36"0B932ACC-A388-429D-92F5-3EE929ADDC72-
 bEDE0872D-9B11-4CAD-9F57-6B684A9A5485
 
+CProcessPCH /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HeightMap-Prefix-exkhzrbkrqmrajdnigaluoseycou/HeightMap-Prefix.pch.pch HeightMap/HeightMap-Prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
 CProcessPCH /var/folders/nx/sdfmhpvj2bngrshdrypkjk1m0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HeightMap-Prefix-fgjpgfigttkdnsgjligavuuzndjy/HeightMap-Prefix.pch.pch HeightMap/HeightMap-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
 CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcent
-s408487776.209747
-e408487776.211444
+s408658662.335094
+e408658662.337197
 r1
 xProcessProductPackaging
 x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist
 x/Users/Seify/Desktop/My Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcent
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection213"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcent213"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcentf0c335600759b841^a72136600759b841^---0#0#1#-19%DVTDocumentLocation2@120"file:///Users/Seify/Desktop/My%20Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcent0000000000000000^753"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcent    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist -entitlements -format xml -o /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcent36"1C10863A-6DCF-46F5-8362-6C5E55E7EEE5-
-bA1DBAE34-38B5-4BFF-9734-F85CF2631CEB
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection213"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcent213"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcenta8e355e6a25bb841^335356e6a25bb841^---0#0#1#-19%DVTDocumentLocation2@120"file:///Users/Seify/Desktop/My%20Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcent0000000000000000^753"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcent    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist -entitlements -format xml -o /Users/Seify/Desktop/My\ Projects/HeightMap/build/HeightMap.build/Debug-iphoneos/HeightMap.build/HeightMap.xcent36"48BDB86B-9D8F-4A8B-AC7F-8FC5D4B4C328-
+bBD00D2B7-40BD-42EA-8B7C-9E7CD159FB9B
 
 CProcessProductPackaging /Users/Seify/Library/MobileDevice/Provisioning\ Profiles/8AECE356-AA01-4176-9FEA-B99FE9FE47EF.mobileprovision /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app/embedded.mobileprovision
 s408210940.477355
@@ -768,11 +783,11 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection193"Proces
 bEDE0872D-9B11-4CAD-9F57-6B684A9A5485
 
 CTouch /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app
-s408490055.499097
-e408490055.527731
+s408666572.418497
+e408666572.452598
 r1
 xTouch
 x/Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Touch /Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app40"Touch build/Debug-iphoneos/HeightMap.app23dd7f471059b841^8f1a87471059b841^---0#0#1#--382"Touch build/Debug-iphoneos/HeightMap.app    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app36"9375FA3E-84B3-4774-A1BA-3D5678894A7D-
-bD680AAE4-3E8C-463D-B0A9-14EC3CA21EEF
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Touch /Users/Seify/Desktop/My Projects/HeightMap/build/Debug-iphoneos/HeightMap.app40"Touch build/Debug-iphoneos/HeightMap.app0a316bccc15bb841^2fde73ccc15bb841^---0#0#1#--382"Touch build/Debug-iphoneos/HeightMap.app    cd "/Users/Seify/Desktop/My Projects/HeightMap"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Seify/Desktop/My\ Projects/HeightMap/build/Debug-iphoneos/HeightMap.app36"13BC7758-617D-4BFF-A878-25E34C715371-
+b7F68EC19-F343-4490-86AB-DB88301C4518
 

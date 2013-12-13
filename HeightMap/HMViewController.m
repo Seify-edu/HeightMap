@@ -145,9 +145,12 @@ GLfloat gCubeVertexData[216] =
 
 - (void)setupGL
 {
+    
     [EAGLContext setCurrentContext:self.context];
     
     [self loadShaders];
+    
+
     
     glEnable(GL_DEPTH_TEST);
     
@@ -157,7 +160,7 @@ GLfloat gCubeVertexData[216] =
     glGenBuffers(1, &_vertexBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
 //    glBufferData(GL_ARRAY_BUFFER, sizeof(gCubeVertexData), gCubeVertexData, GL_STATIC_DRAW);
-    glBufferData(GL_ARRAY_BUFFER, 512 * 3 * 6 * sizeof(GLfloat), self.terrain, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, 512 * ( 512 ) * 2 * 6 * sizeof(GLfloat), self.terrain, GL_STATIC_DRAW);
     
     glEnableVertexAttribArray(GLKVertexAttribPosition);
     glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 24, BUFFER_OFFSET(0));
@@ -216,27 +219,57 @@ GLfloat gCubeVertexData[216] =
     const int POINTS_IN_TRIANGLE = 3;
     const int COORDS_PER_POINT = 3;
     const int NORMAL_COORDS_PER_POINT = 3;
-    self.terrain = calloc(width * POINTS_IN_TRIANGLE * (COORDS_PER_POINT + NORMAL_COORDS_PER_POINT), sizeof(GLfloat));
-    for ( int i = 0; i < width; i++ )
-    {
-//        self.terrain[i] = ( GLfloat( i ) / GLfloat( width ) * 1.0; // x = [0.0 .. 1.0];
-        
-        self.terrain[i * 12 + 0] = [@(i) floatValue] / [@(width) floatValue]; // x1 = [0.0 .. 1.0];
-        self.terrain[i * 12 + 1] =  [@(rawData[i * 4]) floatValue] / 255.0;
-        self.terrain[i * 12 + 2] = 0.0; //
-        
-        self.terrain[i * 12 + 3] = 0.0; // Normal X
-        self.terrain[i * 12 + 4] = 1.0; // Normal Y
-        self.terrain[i * 12 + 5] = 0.0; // Normal Z
-        
-        self.terrain[i * 12 + 6] = [@(i) floatValue] / [@(width) floatValue]; // x2 = [0.0 .. 1.0];
-        self.terrain[i * 12 + 7] = [@(rawData[i * 4]) floatValue] / 255.0; //
-        self.terrain[i * 12 + 8] = -0.5; //
 
-        self.terrain[i * 12 + 9] = 0.0; // Normal X
-        self.terrain[i * 12 + 10] = 1.0; // Normal Y
-        self.terrain[i * 12 + 11] = 0.0; // Normal Z
-}
+    int redundantTriOffset = 1;
+//    int width2 = width + redundantTriOffset;
+    int width2 = width;
+
+    
+    self.terrain = calloc(height * width2 * POINTS_IN_TRIANGLE * (COORDS_PER_POINT + NORMAL_COORDS_PER_POINT), sizeof(GLfloat));
+
+    
+//    for ( int j = 0; j < 1; j++ )
+    for ( int j = 0; j < height; j++ )
+    {
+        for ( int i = 0; i < width; i++ )
+        {
+            self.terrain[( j * width2 + i ) * 12 + 0] = [@(i) doubleValue] / [@(width) doubleValue]; // x1 = [0.0 .. 1.0];
+            self.terrain[( j * width2 + i ) * 12 + 1] =  [@(rawData[( j * width + i ) * 4]) doubleValue] / 255.0;
+            self.terrain[( j * width2 + i ) * 12 + 2] = [@( j ) doubleValue] / [@( height ) doubleValue]; //
+            
+            self.terrain[( j * width2 + i ) * 12 + 3] = 0.0; // Normal X
+            self.terrain[( j * width2 + i ) * 12 + 4] = 1.0; // Normal Y
+            self.terrain[( j * width2 + i ) * 12 + 5] = 0.0; // Normal Z
+            
+            self.terrain[( j * width2 + i ) * 12 + 6] = [@( i ) doubleValue] / [@(width) doubleValue]; // x2 = [0.0 .. 1.0];
+            self.terrain[( j * width2 + i ) * 12 + 7] = j == ( height - 1 ) ? [@(rawData[( j * width + i ) * 4]) doubleValue] / 255.0 : [@(rawData[( ( j + 1 ) * width + i ) * 4]) doubleValue] / 255.0; //
+            self.terrain[( j * width2 + i ) * 12 + 8] = [@( j + 1 ) doubleValue] / [@( height ) doubleValue];
+
+            self.terrain[( j * width2 + i ) * 12 + 9] = 0.0; // Normal X
+            self.terrain[( j * width2 + i ) * 12 + 10] = 1.0; // Normal Y
+            self.terrain[( j * width2 + i ) * 12 + 11] = 0.0; // Normal Z
+        }
+    }
+    
+//    for ( int j = 0; j < height - 1; j++ )
+//    {
+//        self.terrain[( j * width2 + width - 1 ) * 12 + 0] = self.terrain[( j * width2 + width - 2 ) * 12 + 6];
+//        self.terrain[( j * width2 + width - 1 ) * 12 + 1] = self.terrain[( j * width2 + width - 2 ) * 12 + 7];
+//        self.terrain[( j * width2 + width - 1 ) * 12 + 2] = self.terrain[( j * width2 + width - 2 ) * 12 + 8];
+//        
+////        NSLog(@" %d <- %d", j * width2 + width, j * width2 + width - 1);
+//
+//        self.terrain[( j * width2 + width - 1 ) * 12 + 6] = self.terrain[( j * width2 + width ) * 12 + 0];
+//        self.terrain[( j * width2 + width - 1 ) * 12 + 7] = self.terrain[( j * width2 + width ) * 12 + 1];
+//        self.terrain[( j * width2 + width - 1 ) * 12 + 8] = self.terrain[( j * width2 + width ) * 12 + 2];
+//    }
+    
+//    for ( int j = 0; j < 2; j++ )
+//        for ( int i = 0; i < width; i++ )
+//        {
+//            NSLog(@"self.terrain[%d][%d] point 1 = (%f, %f, %f)", j, i, self.terrain[( j * width2 + i ) * 12 + 0], self.terrain[( j * width2 + i ) * 12 + 1], self.terrain[( j * width2 + i ) * 12 + 2]);
+//            NSLog(@"self.terrain[%d][%d] point 2 = (%f, %f, %f)", j, i, self.terrain[( j * width2 + i ) * 12 + 6], self.terrain[( j * width2 + i ) * 12 + 7], self.terrain[( j * width2 + i ) * 12 + 8]);
+//        }
     
     free(rawData);
     
@@ -266,7 +299,7 @@ GLfloat gCubeVertexData[216] =
 //    modelViewMatrix = GLKMatrix4MakeTranslation(0.0f, 0.0f, 1.5f);
 //    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, _rotation, 1.0f, 1.0f, 1.0f);
     
-    modelViewMatrix = GLKMatrix4MakeTranslation(0.0f, -0.5f, -2.0f);;
+    modelViewMatrix = GLKMatrix4MakeTranslation(0.0f, -0.5f, -1.0f);;
     modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, _rotation, 0.0f, 1.0f, 0.0f);
     modelViewMatrix = GLKMatrix4Multiply(baseModelViewMatrix, modelViewMatrix);
     
@@ -290,7 +323,7 @@ GLfloat gCubeVertexData[216] =
     glUniformMatrix4fv(uniforms[UNIFORM_MODELVIEWPROJECTION_MATRIX], 1, 0, _modelViewProjectionMatrix.m);
     glUniformMatrix3fv(uniforms[UNIFORM_NORMAL_MATRIX], 1, 0, _normalMatrix.m);
     
-    glDrawArrays(GL_TRIANGLE_STRIP, 0, 512 * 2);
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, 512 * ( 512 ) * 2);
 }
 
 #pragma mark -  OpenGL ES 2 shader compilation
