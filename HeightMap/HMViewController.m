@@ -10,6 +10,14 @@
 
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 
+@interface HMViewController()
+{
+    int landscapeVertexArrayHeight;
+    int landscapeVertexArrayWidth;
+}
+
+@end
+
 // Uniform index.
 enum
 {
@@ -160,7 +168,7 @@ GLfloat gCubeVertexData[216] =
     glGenBuffers(1, &_vertexBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
 //    glBufferData(GL_ARRAY_BUFFER, sizeof(gCubeVertexData), gCubeVertexData, GL_STATIC_DRAW);
-    glBufferData(GL_ARRAY_BUFFER, 512 * ( 512 ) * 2 * 6 * sizeof(GLfloat), self.terrain, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, landscapeVertexArrayWidth * landscapeVertexArrayHeight * 2 * 6 * sizeof(GLfloat), self.terrain, GL_STATIC_DRAW);
     
     glEnableVertexAttribArray(GLKVertexAttribPosition);
     glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 24, BUFFER_OFFSET(0));
@@ -188,19 +196,19 @@ GLfloat gCubeVertexData[216] =
 - (GLfloat *)loadTerrainFromImage:(UIImage *)map
 {
     CGImageRef imageRef = [map CGImage];
-    NSUInteger width = CGImageGetWidth(imageRef);
-    NSUInteger height = CGImageGetHeight(imageRef);
+    NSUInteger imageWidth = CGImageGetWidth(imageRef);
+    NSUInteger imageHeight = CGImageGetHeight(imageRef);
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    unsigned char *rawData = (unsigned char*) calloc(height * width * 4, sizeof(unsigned char));
+    unsigned char *rawData = (unsigned char*) calloc(imageHeight * imageWidth * 4, sizeof(unsigned char));
     NSUInteger bytesPerPixel = 4;
-    NSUInteger bytesPerRow = bytesPerPixel * width;
+    NSUInteger bytesPerRow = bytesPerPixel * imageWidth;
     NSUInteger bitsPerComponent = 8;
-    CGContextRef context = CGBitmapContextCreate(rawData, width, height,
+    CGContextRef context = CGBitmapContextCreate(rawData, imageWidth, imageHeight,
                                                  bitsPerComponent, bytesPerRow, colorSpace,
                                                  kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
     CGColorSpaceRelease(colorSpace);
     
-    CGContextDrawImage(context, CGRectMake(0, 0, width, height), imageRef);
+    CGContextDrawImage(context, CGRectMake(0, 0, imageWidth, imageHeight), imageRef);
     CGContextRelease(context);
         
     // Now your rawData contains the image data in the RGBA8888 pixel format.
@@ -222,47 +230,46 @@ GLfloat gCubeVertexData[216] =
 
     int redundantTriOffset = 1;
 //    int width2 = width + redundantTriOffset;
-    int width2 = width;
+    landscapeVertexArrayHeight = imageHeight;
+    landscapeVertexArrayWidth = imageWidth + redundantTriOffset;
 
     
-    self.terrain = calloc(height * width2 * POINTS_IN_TRIANGLE * (COORDS_PER_POINT + NORMAL_COORDS_PER_POINT), sizeof(GLfloat));
+    self.terrain = calloc(imageHeight * landscapeVertexArrayWidth * POINTS_IN_TRIANGLE * (COORDS_PER_POINT + NORMAL_COORDS_PER_POINT), sizeof(GLfloat));
 
     
 //    for ( int j = 0; j < 1; j++ )
-    for ( int j = 0; j < height; j++ )
+    for ( int j = 0; j < landscapeVertexArrayHeight; j++ )
     {
-        for ( int i = 0; i < width; i++ )
+        for ( int i = 0; i < imageWidth; i++ )
         {
-            self.terrain[( j * width2 + i ) * 12 + 0] = [@(i) doubleValue] / [@(width) doubleValue]; // x1 = [0.0 .. 1.0];
-            self.terrain[( j * width2 + i ) * 12 + 1] =  [@(rawData[( j * width + i ) * 4]) doubleValue] / 255.0;
-            self.terrain[( j * width2 + i ) * 12 + 2] = [@( j ) doubleValue] / [@( height ) doubleValue]; //
+            self.terrain[( j * landscapeVertexArrayWidth + i ) * 12 + 0] = [@(i) doubleValue] / [@(imageWidth) doubleValue]; // x1 = [0.0 .. 1.0];
+            self.terrain[( j * landscapeVertexArrayWidth + i ) * 12 + 1] =  [@(rawData[( j * imageWidth + i ) * 4]) doubleValue] / 255.0;
+            self.terrain[( j * landscapeVertexArrayWidth + i ) * 12 + 2] = [@( j ) doubleValue] / [@( imageHeight ) doubleValue]; //
             
-            self.terrain[( j * width2 + i ) * 12 + 3] = 0.0; // Normal X
-            self.terrain[( j * width2 + i ) * 12 + 4] = 1.0; // Normal Y
-            self.terrain[( j * width2 + i ) * 12 + 5] = 0.0; // Normal Z
+            self.terrain[( j * landscapeVertexArrayWidth + i ) * 12 + 3] = 0.0; // Normal X
+            self.terrain[( j * landscapeVertexArrayWidth + i ) * 12 + 4] = 1.0; // Normal Y
+            self.terrain[( j * landscapeVertexArrayWidth + i ) * 12 + 5] = 0.0; // Normal Z
             
-            self.terrain[( j * width2 + i ) * 12 + 6] = [@( i ) doubleValue] / [@(width) doubleValue]; // x2 = [0.0 .. 1.0];
-            self.terrain[( j * width2 + i ) * 12 + 7] = j == ( height - 1 ) ? [@(rawData[( j * width + i ) * 4]) doubleValue] / 255.0 : [@(rawData[( ( j + 1 ) * width + i ) * 4]) doubleValue] / 255.0; //
-            self.terrain[( j * width2 + i ) * 12 + 8] = [@( j + 1 ) doubleValue] / [@( height ) doubleValue];
+            self.terrain[( j * landscapeVertexArrayWidth + i ) * 12 + 6] = [@( i ) doubleValue] / [@(imageWidth) doubleValue]; // x2 = [0.0 .. 1.0];
+            self.terrain[( j * landscapeVertexArrayWidth + i ) * 12 + 7] = j == ( imageHeight - 1 ) ? [@(rawData[( j * imageWidth + i ) * 4]) doubleValue] / 255.0 : [@(rawData[( ( j + 1 ) * imageWidth + i ) * 4]) doubleValue] / 255.0; //
+            self.terrain[( j * landscapeVertexArrayWidth + i ) * 12 + 8] = [@( j + 1 ) doubleValue] / [@( imageHeight ) doubleValue];
 
-            self.terrain[( j * width2 + i ) * 12 + 9] = 0.0; // Normal X
-            self.terrain[( j * width2 + i ) * 12 + 10] = 1.0; // Normal Y
-            self.terrain[( j * width2 + i ) * 12 + 11] = 0.0; // Normal Z
+            self.terrain[( j * landscapeVertexArrayWidth + i ) * 12 + 9] = 0.0; // Normal X
+            self.terrain[( j * landscapeVertexArrayWidth + i ) * 12 + 10] = 1.0; // Normal Y
+            self.terrain[( j * landscapeVertexArrayWidth + i ) * 12 + 11] = 0.0; // Normal Z
         }
     }
     
-//    for ( int j = 0; j < height - 1; j++ )
-//    {
-//        self.terrain[( j * width2 + width - 1 ) * 12 + 0] = self.terrain[( j * width2 + width - 2 ) * 12 + 6];
-//        self.terrain[( j * width2 + width - 1 ) * 12 + 1] = self.terrain[( j * width2 + width - 2 ) * 12 + 7];
-//        self.terrain[( j * width2 + width - 1 ) * 12 + 2] = self.terrain[( j * width2 + width - 2 ) * 12 + 8];
-//        
-////        NSLog(@" %d <- %d", j * width2 + width, j * width2 + width - 1);
-//
-//        self.terrain[( j * width2 + width - 1 ) * 12 + 6] = self.terrain[( j * width2 + width ) * 12 + 0];
-//        self.terrain[( j * width2 + width - 1 ) * 12 + 7] = self.terrain[( j * width2 + width ) * 12 + 1];
-//        self.terrain[( j * width2 + width - 1 ) * 12 + 8] = self.terrain[( j * width2 + width ) * 12 + 2];
-//    }
+    for ( int j = 0; j < landscapeVertexArrayHeight; j++ )
+    {
+        self.terrain[( ( j + 1 ) * landscapeVertexArrayWidth ) * 12 + 0] = self.terrain[( ( j + 1 ) * landscapeVertexArrayWidth - 1 ) * 12 + 6];
+        self.terrain[( ( j + 1 ) * landscapeVertexArrayWidth ) * 12 + 1] = self.terrain[( ( j + 1 ) * landscapeVertexArrayWidth - 1 ) * 12 + 7];
+        self.terrain[( ( j + 1 ) * landscapeVertexArrayWidth ) * 12 + 2] = self.terrain[( ( j + 1 ) * landscapeVertexArrayWidth - 1 ) * 12 + 8];
+        
+        self.terrain[( ( j + 1 ) * landscapeVertexArrayWidth ) * 12 + 6] = self.terrain[( ( j + 1 ) * landscapeVertexArrayWidth + 1 ) * 12 + 0];
+        self.terrain[( ( j + 1 ) * landscapeVertexArrayWidth ) * 12 + 7] = self.terrain[( ( j + 1 ) * landscapeVertexArrayWidth + 1 ) * 12 + 1];
+        self.terrain[( ( j + 1 ) * landscapeVertexArrayWidth ) * 12 + 8] = self.terrain[( ( j + 1 ) * landscapeVertexArrayWidth + 1 ) * 12 + 2];
+    }
     
 //    for ( int j = 0; j < 2; j++ )
 //        for ( int i = 0; i < width; i++ )
@@ -323,7 +330,7 @@ GLfloat gCubeVertexData[216] =
     glUniformMatrix4fv(uniforms[UNIFORM_MODELVIEWPROJECTION_MATRIX], 1, 0, _modelViewProjectionMatrix.m);
     glUniformMatrix3fv(uniforms[UNIFORM_NORMAL_MATRIX], 1, 0, _normalMatrix.m);
     
-    glDrawArrays(GL_TRIANGLE_STRIP, 0, 512 * ( 512 ) * 2);
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, landscapeVertexArrayWidth * landscapeVertexArrayHeight * 2);
 }
 
 #pragma mark -  OpenGL ES 2 shader compilation
